@@ -1,18 +1,19 @@
 # Artificial confocal microscopy for deep label-free imaging
 
-# Installation
+# Installation with conda
 ```shell
 git clone git@github.com:shenghh2015/artificial_confocal.git
 cd artificial_confocal
 ```
-## 1. Installing with conda: 
-### see conda_install.md
-## 2. Installing with pip: 
 ```
-pip install -r requirement.txt
+conda create -n tf-eunet tensorflow-gpu=1.15 cudatoolkit=10.0 pip
+conda activate tf-eunet
+conda install ipython
+pip install scipy sklearn matplotlib natsort jupyterlab keras_applications>=1.0.7 image-classifiers==1.0.0 efficientnet==1.0.0 segmentation-models==1.0.1 albumentations==0.3.0
+pip install 'h5py==2.10.0' --force-reinstall
 ```
 # Training
-## prepare dataset that follow the example bead dataset, be free to see the example in codes/inspect_data.ipynb
+## Prepare a dataset that follow the example bead dataset in the folder dataset/bead. Be free to check the codes/inspect_data.ipynb for inspecting the sample data.
 ```
 datasets
    |——bead
@@ -42,4 +43,4 @@ cd codes
 python train.py --dataset bead
 ```
 # Testing
-## check the codes/inspect_trained_model.ipynb
+## codes/inspect_trained_model.ipynb
