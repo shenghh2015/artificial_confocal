@@ -48,4 +48,4 @@ python train.py --dataset bead
 ### The example of testing the trained model is shown in codes/inspect_trained_model.ipynb
 
 ## Acknowledgement
-The implementation code is built up based on [Segmentatioin models](https://github.com/qubvel/segmentation_models). Great thanks for their wonderful works.
+The implementation code is built up based on [segmentatioin models](https://github.com/qubvel/segmentation_models). Great thanks for their wonderful works.
