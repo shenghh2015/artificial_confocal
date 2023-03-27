@@ -47,5 +47,18 @@ python train.py --dataset bead
 ## Testing
 ### The example of testing the trained model is shown in codes/inspect_trained_model.ipynb
 
+## Citation
+### The codes and data provided here are from the following paper. Please cite the paper if you use the codes.
+
+```
+@article{chen2023artificial,
+  title={Artificial confocal microscopy for deep label-free imaging},
+  author={Chen, Xi and Kandel, Mikhail E and He, Shenghua and Hu, Chenfei and Lee, Young Jae and Sullivan, Kathryn and Tracy, Gregory and Chung, Hee Jung and Kong, Hyun Joon and Anastasio, Mark and Popescu, Gabriel},
+  journal={Nature Photonics},
+  pages={1--9},
+  year={2023}
+}
+```
+
 ## Acknowledgement
 The implementation code is built up based on [segmentatioin models](https://github.com/qubvel/segmentation_models). Great thanks for their wonderful works.
