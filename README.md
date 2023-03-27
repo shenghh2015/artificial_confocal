@@ -14,7 +14,7 @@ pip install 'h5py==2.10.0' --force-reinstall
 ```
 
 ## Dataset
-### The hierarchical structure of a dataset is shown as below. A example dataset (bead) is in the artificial_confocal/dataset. The example of inspecting sample in the dataset is shown in codes/inspect_data.ipynb. The bead dataset for the paper is much more then the example one.
+The hierarchical structure of a dataset is shown as below. A example dataset (bead) is in the artificial_confocal/dataset. The example of inspecting sample in the dataset is shown in codes/inspect_data.ipynb. The bead dataset for the paper is much more then the example one.
 ```
 datasets
    |——bead
@@ -39,16 +39,16 @@ datasets
    |    └——————...
 ```
 ## Training
-### Run the model with the train.py
+Run the model with the train.py
 ``` shell
 cd codes
 python train.py --dataset bead
 ```
 ## Testing
-### The example of testing the trained model is shown in codes/inspect_trained_model.ipynb
+The example of testing the trained model is shown in codes/inspect_trained_model.ipynb
 
 ## Citation
-### The codes and data provided here are from the following paper. Please cite the paper if you use the codes.
+The codes and data provided here are from the following paper. Please cite the paper if you use the codes.
 
 ```
 @article{chen2023artificial,
