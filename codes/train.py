@@ -49,7 +49,7 @@ def psnr(y_true, y_pred):
     if mse == 0: return float('inf')
     else: return 20 * math.log10(255.0 / math.sqrt(mse))
 
-def get_args():
+def make_args():
     
     parser = argparse.ArgumentParser()
     parser.add_argument("--gpu",        type=str, default   = '0')
@@ -64,11 +64,11 @@ def get_args():
     args = parser.parse_args()
 
     print(args)
-    return
+    return args
 
 def main():
     
-
+    args = make_args()
 
     os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
 
@@ -109,7 +109,7 @@ def main():
     model.compile(optim, loss, metrics)                                                                # training set up
 
     # training at image level
-    model_name = f'{dataset_name}_dim-{args.dim}_{args.backbone}'
+    model_name = f'{dataset_name}_dim-{train_dim}_{args.backbone}'
     model_dir  = os.path.join(root_dir, f'results/{model_name}')
     os.makedirs(model_dir, exist_ok = True)
     callbacks = [
